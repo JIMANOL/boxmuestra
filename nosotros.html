@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros y Ubicación - Escuela de Box</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+
+    <div id="header-placeholder"></div>
+
+    <main class="py-16 px-4 max-w-6xl mx-auto space-y-16">
+        
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-red-500 font-bold text-sm uppercase tracking-wider">Conócenos</span>
+                <h1 class="text-4xl font-extrabold text-white">Más que un gimnasio, una familia de disciplina</h1>
+                <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                    Fundada con la misión de enseñar boxeo auténtico y formar hábitos saludables. Aquí entrenamos el cuerpo y la mente con respeto, humildad y esfuerzo constante bajo la tutela de profesionales experimentados.
+                </p>
+                <div class="p-4 bg-slate-900 border border-slate-800 rounded-xl space-y-2">
+                    <h4 class="font-bold text-white text-sm">📍 Dirección del Gimnasio</h4>
+                    <p class="text-slate-400 text-sm">Av. Principal #123, Colonia Centro (Frente al Parque Principal).</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 text-center space-y-3 shadow-xl">
+                <p class="text-6xl mb-2">🥊</p>
+                <h3 class="text-2xl font-bold text-white">Entrenamiento Real</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">Espacio equipado con costales, peras, zona de manoplas y área de acondicionamiento físico general.</p>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-bold text-white">¿Dónde nos ubicamos?</h2>
+                <p class="text-slate-400 text-sm">Ven a visitarnos y conoce las instalaciones en persona.</p>
+            </div>
+            
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-2 h-96 shadow-2xl overflow-hidden">
+                <iframe 
+                    title="Ubicación de la Escuela en Google Maps"
+                    class="w-full h-full rounded-xl grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                    src="https://maps.google.com/maps?q=Mexico&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="componentes.js"></script>
+</body>
+</html>

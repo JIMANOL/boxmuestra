@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes - Escuela de Box</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans">
+
+    <div id="header-placeholder"></div>
+
+    <main class="py-16 px-4 max-w-3xl mx-auto space-y-8">
+        <div class="text-center">
+            <h1 class="text-4xl font-extrabold text-white mb-3">Preguntas Frecuentes</h1>
+            <p class="text-slate-400">Todo lo que necesitas saber antes de tu primera clase.</p>
+        </div>
+
+        <div class="space-y-4">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+                <button class="faq-btn w-full p-4 text-left font-bold text-white flex justify-between items-center hover:bg-slate-800/50">
+                    <span>¿Necesito tener experiencia previa?</span>
+                    <span class="icono text-red-500 font-mono text-xl">+</span>
+                </button>
+                <div class="faq-respuesta hidden p-4 pt-0 text-sm text-slate-400 border-t border-slate-800/50">
+                    No, en absoluto. Nuestras clases están estructuradas para enseñar desde cero: postura, vendaje, golpes básicos y respiración.
+                </div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+                <button class="faq-btn w-full p-4 text-left font-bold text-white flex justify-between items-center hover:bg-slate-800/50">
+                    <span>¿Qué debo llevar a mi primera clase?</span>
+                    <span class="icono text-red-500 font-mono text-xl">+</span>
+                </button>
+                <div class="faq-respuesta hidden p-4 pt-0 text-sm text-slate-400 border-t border-slate-800/50">
+                    Solo necesitas ropa deportiva cómoda, tenis, una toalla pequeña y tu botella de agua. Nosotros te prestamos los guantes para tu clase de prueba.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer inyectado por JS -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script de componentes + Acordeón de FAQs -->
+    <script src="componentes.js"></script>
+    <script>
+        // Este script maneja el despliegue de las preguntas frecuentes
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('.faq-btn');
+            if (btn) {
+                const respuesta = btn.nextElementSibling;
+                const icono = btn.querySelector('.icono');
+                respuesta.classList.toggle('hidden');
+                icono.textContent = respuesta.classList.contains('hidden') ? '+' : '−';
+            }
+        });
+    </script>
+</body>
+</html>
