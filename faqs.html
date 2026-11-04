@@ -10,14 +10,14 @@
 
     <div id="header-placeholder"></div>
 
-    <main class="py-16 px-4 max-w-3xl mx-auto space-y-8">
-        <div class="text-center">
+    <main class="py-16 px-4 max-w-3xl mx-auto space-y-12">
+        <div class="text-center space-y-2">
             <h1 class="text-4xl font-extrabold text-white mb-3">Preguntas Frecuentes</h1>
             <p class="text-slate-400">Todo lo que necesitas saber antes de tu primera clase.</p>
         </div>
 
         <div class="space-y-4">
-            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-md">
                 <button class="faq-btn w-full p-4 text-left font-bold text-white flex justify-between items-center hover:bg-slate-800/50">
                     <span>¿Necesito tener experiencia previa?</span>
                     <span class="icono text-red-500 font-mono text-xl">+</span>
@@ -27,13 +27,35 @@
                 </div>
             </div>
 
-            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden">
+            <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden shadow-md">
                 <button class="faq-btn w-full p-4 text-left font-bold text-white flex justify-between items-center hover:bg-slate-800/50">
                     <span>¿Qué debo llevar a mi primera clase?</span>
                     <span class="icono text-red-500 font-mono text-xl">+</span>
                 </button>
                 <div class="faq-respuesta hidden p-4 pt-0 text-sm text-slate-400 border-t border-slate-800/50">
                     Solo necesitas ropa deportiva cómoda, tenis, una toalla pequeña y tu botella de agua. Nosotros te prestamos los guantes para tu clase de prueba.
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta de duda adicional / Contacto directo -->
+        <div class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 rounded-2xl p-8 text-center space-y-4 shadow-xl">
+            <div class="w-12 h-12 bg-red-500/10 border border-red-500/20 text-red-400 rounded-2xl flex items-center justify-center mx-auto text-xl">
+                💬
+            </div>
+            
+            <div class="space-y-2 max-w-md mx-auto">
+                <h3 class="text-xl font-bold text-white">¿Tienes una duda más específica?</h3>
+                <p class="text-slate-400 text-sm">
+                    Si te quedó alguna pregunta sobre costos, entrenamientos o equipo, escríbenos directamente y te contestaremos lo antes posible.
+                </p>
+            </div>
+
+            <div class="pt-2">
+                <div class="whatsapp-btn-placeholder inline-block" 
+                     data-texto="Resolver duda por WhatsApp" 
+                     data-mensaje="Hola, tengo una pregunta adicional sobre las clases que no vi en la web" 
+                     data-clases="px-6 py-3.5 rounded-xl text-sm shadow-lg">
                 </div>
             </div>
         </div>
