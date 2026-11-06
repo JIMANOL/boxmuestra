@@ -3,49 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club de Box & Kickboxing</title>
+    <title>Osos Sauces - Club de Box & Kickboxing</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-red-600 selection:text-white">
 
     <div id="header-placeholder"></div>
 
-    <section class="relative min-h-[85vh] flex items-center justify-center text-center px-4 py-16 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950">
-        <div class="max-w-3xl mx-auto space-y-6">
-            <span class="inline-block px-3 py-1 bg-red-500/10 text-red-400 border border-red-500/20 rounded-full text-xs sm:text-sm font-semibold tracking-wide uppercase">
-                Entrena    |    Aprende    |    Supérate
-            </span>
+    <section class="relative min-h-[90vh] flex items-center justify-center text-center px-4 py-16 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
+        
+        <div class="absolute inset-0 pointer-events-none opacity-20 bg-center bg-no-repeat bg-contain scale-75 sm:scale-90" 
+             style="background-image: url('assets/img/rasgunos.png');">
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto space-y-8">
             
-            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
-                Forja tu disciplina, <br class="hidden sm:inline"/>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
-                    supera tus límites
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-red-950/60 border border-red-600/40 rounded-full text-xs sm:text-sm font-bold text-red-400 tracking-wider uppercase shadow-lg shadow-red-950/50">
+                <img src="assets/img/huella-roja.png" class="h-4 w-auto" alt="Garra">
+                Grizzly Fight Team • Est. 2019
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight text-white leading-tight uppercase">
+                ¡Basta de excusas! <br/>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-red-500 to-orange-500">
+                    Es hora de entrenar
                 </span>
             </h1>
 
-            <p class="text-slate-400 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
-                Clases de Boxeo, Kickboxing y Entrenamiento Funcional para todos los niveles.
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
+                Boxeo, Kickboxing y Entrenamiento Funcional. Tenemos grupos y clases para todos los niveles.
             </p>
 
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+            <div class="inline-block bg-slate-900/90 border-2 border-red-600/60 rounded-2xl p-4 shadow-xl shadow-red-950/30">
+                <p class="text-xs uppercase tracking-widest text-slate-400 font-bold">Promoción de Bienvenida</p>
+                <p class="text-xl sm:text-2xl font-black text-amber-400 mt-0.5 uppercase tracking-wide">
+                    ¡Tu Primer Clase Es GRATIS!
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-2">
                 <div class="whatsapp-btn-placeholder w-full sm:w-auto" 
                      data-texto="Agendar Clase Gratis" 
-                     data-mensaje="Hola, quiero agendar mi clase de prueba gratis" 
-                     data-clases="w-full sm:w-auto px-8 py-4 rounded-xl shadow-xl shadow-emerald-900/30 text-base">
+                     data-mensaje="Hola, quiero aprovechar la primera semana gratis" 
+                     data-clases="w-full sm:w-auto px-8 py-4 rounded-xl text-base shadow-xl shadow-emerald-950/60 font-black">
                 </div>
 
                 <a href="disciplinas.html" 
-                   class="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl border border-slate-700 transition-all text-center">
+                   class="w-full sm:w-auto px-8 py-4 bg-slate-900 hover:bg-slate-800 text-slate-200 font-bold rounded-xl border border-slate-700 hover:border-red-600/50 transition-all text-center">
                     Ver Disciplinas
                 </a>
             </div>
-            
-            <div class="flex items-center justify-center w-full">
-                <a href="nosotros.html" 
-                    class="w-full sm:w-auto px-8 py-4 bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold rounded-xl border border-slate-700 transition-all text-center">
-                    Acerca de Nosotros 
-                </a>
+
+            <div class="pt-8 max-w-3xl mx-auto">
+                <div class="relative rounded-3xl overflow-hidden border border-slate-800 shadow-2xl shadow-red-950/20 group">
+                    <img src="assets/img/grupal.png" 
+                         alt="Entrenamiento Grupal Osos Sauces" 
+                         class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700">
+                    <!-- Degradado para fusionar imagen con el fondo -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                    <div class="absolute bottom-4 left-4 right-4 text-center sm:text-left">
+                        <span class="text-xs uppercase font-extrabold text-red-500 tracking-widest">Manada Osos Sauces</span>
+                        <p class="text-sm font-bold text-slate-200">Entrenamiento real con equipo completo y la mejor comunidad.</p>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 

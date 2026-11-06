@@ -1,182 +1,180 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros y Ubicación - Escuela de Box</title>
+    <title>Nosotros y Ubicación - Osos Sauces</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-red-600 selection:text-white">
 
     <div id="header-placeholder"></div>
 
-    <main class="py-16 px-4 max-w-6xl mx-auto space-y-20">
+    <main class="relative min-h-[90vh] py-16 px-4 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 overflow-hidden">
         
-        <!-- SECCIÓN 1: INTRODUCCIÓN Y VALORES -->
-        <section class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="text-red-500 font-bold text-sm uppercase tracking-wider">Conócenos</span>
-                <h1 class="text-4xl font-extrabold text-white">Más que un gimnasio, una familia de disciplina</h1>
-                <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
-                    Fundada con la misión de enseñar boxeo auténtico y formar hábitos saludables. Aquí entrenamos el cuerpo y la mente con respeto, humildad y esfuerzo constante bajo la tutela de profesionales experimentados.
-                </p>
-                
-                <div class="pt-2">
-                    <div class="whatsapp-btn-placeholder" 
-                         data-texto="Informes" 
-                         data-mensaje="Hola, me gustaría recibir más información general de la escuela" 
-                         data-clases="px-6 py-3 rounded-xl text-sm">
-                    </div>
-                </div>
-            </div>
+        <div class="absolute inset-0 pointer-events-none opacity-15 bg-center bg-no-repeat bg-contain scale-75 sm:scale-90" 
+             style="background-image: url('assets/img/rasgunos.png');">
+        </div>
 
-            <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 text-center space-y-3 shadow-xl">
-                <p class="text-6xl mb-2">🥊</p>
-                <h3 class="text-2xl font-bold text-white">Entrenamiento Real</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Espacio equipado con costales, peras, zona de manoplas y área de acondicionamiento físico general.</p>
-            </div>
-        </section>
-
-
-        <!-- SECCIÓN 2: INFORMACIÓN DEL PROFESOR (NUEVA) -->
-        <section class="bg-slate-900/60 border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-xl">
-            <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
-                <span class="text-red-500 font-bold text-xs uppercase tracking-wider">Liderazgo y Experiencia</span>
-                <h2 class="text-3xl font-extrabold text-white">Tu Entrenador</h2>
-                <p class="text-slate-400 text-sm">Años de trayectoria formando atletas con técnica, disciplina y seguridad.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                <!-- Avatar / Foto simulada -->
-                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 text-center space-y-4 shadow-inner flex flex-col items-center justify-center aspect-square md:aspect-auto">
-                    <div class="w-28 h-28 bg-gradient-to-tr from-red-600 to-orange-500 rounded-full flex items-center justify-center text-4xl shadow-lg shadow-red-900/30">
-                       <img src="assets/img/user.jpg" 
-                             alt="profileImg" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-white">Coach Jurado</h3>
-                        <p class="text-red-400 text-xs font-semibold uppercase tracking-wider mt-1">Head Coach Principal</p>
-                    </div>
-                </div>
-
-                <!-- Descripción y Títulos -->
-                <div class="md:col-span-2 space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-                    <p>
-                        Con una sólida trayectoria en el mundo del boxeo y las artes marciales, nuestro entrenador principal se enfoca tanto en el desarrollo competitivo como en el acondicionamiento físico de personas que buscan mejorar su salud y condición física desde cero.
-                    </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                        <div class="bg-slate-950/60 border border-slate-800/80 p-3.5 rounded-xl flex items-center gap-3">
-                            <span class="text-red-500 text-lg">✓</span>
-                            <span class="text-xs font-medium text-slate-200">Especialista en Técnica y Correcta Postura</span>
-                        </div>
-                        <div class="bg-slate-950/60 border border-slate-800/80 p-3.5 rounded-xl flex items-center gap-3">
-                            <span class="text-red-500 text-lg">✓</span>
-                            <span class="text-xs font-medium text-slate-200">Preparador Físico Certificado</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECCIÓN 3: GALERÍA DE INSTALACIONES -->
-        <section class="space-y-6">
-            <div class="text-center max-w-xl mx-auto space-y-2">
-                <span class="text-red-500 font-bold text-xs uppercase tracking-wider">Espacios Adecuados</span>
-                <h2 class="text-3xl font-extrabold text-white">Nuestras Instalaciones</h2>
-                <p class="text-slate-400 text-sm">Un vistazo al área de entrenamiento, costales y zona de trabajo funcional.</p>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
-                <!-- Imagen 1: gym01.jpg -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/img/gym01.jpg" 
-                             alt="Zona de Costales e Instalaciones del Gimnasio" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 bg-slate-900/90 border-t border-slate-800">
-                        <h4 class="font-bold text-white text-sm">Zona de Costales</h4>
-                        <p class="text-xs text-slate-400 mt-1">Espacio dedicado al golpeo de potencia y resistencia.</p>
-                    </div>
-                </div>
-
-                <!-- Imagen 2: gym02.jpg -->
-                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden group shadow-lg">
-                    <div class="h-64 overflow-hidden">
-                        <img src="assets/img/gym02.jpg" 
-                             alt="Área Funcional del Gimnasio" 
-                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                    </div>
-                    <div class="p-4 bg-slate-900/90 border-t border-slate-800">
-                        <h4 class="font-bold text-white text-sm">Área Funcional</h4>
-                        <p class="text-xs text-slate-400 mt-1">Zona equipada para acondicionamiento y fuerza.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- SECCIÓN 4: REDES SOCIALES (NUEVA) -->
-        <section class="bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-xl text-center space-y-6">
-            <div class="max-w-xl mx-auto space-y-2">
-                <span class="text-red-500 font-bold text-xs uppercase tracking-wider">Comunidad Digital</span>
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Síguenos en Redes Sociales</h2>
-                <p class="text-slate-400 text-sm">Mira nuestros videos y publicaiones en Facebook y TikTok.</p>
-            </div>
-
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-2">
-                <!-- Botón de Facebook -->
-                <a href="https://facebook.com" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-2xl transition-all shadow-lg text-sm">
-                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                    <span>Facebook</span>
-                </a>
-
-                <!-- Botón de TikTok -->
-                <a href="https://tiktok.com" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-2xl border border-slate-700 transition-all shadow-lg text-sm">
-                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.6a6.34 6.34 0 0 0 10.86 4.43v-7.8a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.06z"/></svg>
-                    <span>TikTok</span>
-                </a>
-            </div>
-        </section>
-
-
-        <!-- SECCIÓN 5: UBICACIÓN Y MAPA -->
-        <section class="space-y-6">
-            <div class="bg-gradient-to-b from-slate-900 to-slate-950 p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl relative overflow-hidden group">
-    
-                <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-                    
-                    <div class="space-y-3">
-                        <h2 class="text-xl sm:text-2xl font-medium text-slate-300 tracking-tight">
-                            📍 Nos encuentras en:
-                        </h2>
-                        
-                        <p class="text-white font-extrabold text-2xl sm:text-xl max-w-lg leading-relaxed">
-                            Carlos Arruza, Silverio Pérez 141-Y, Villas Santín, 50214 Toluca de Lerdo, Méx.
-                        </p>
-
-                        <p class="text-slate-500 text-xs sm:text-sm">
-                            Ven a visitarnos y conoce las instalaciones en persona. ¡Tu primer clase te espera!
-                        </p>
-                    </div>
-
-                </div>
-            </div>
+        <div class="relative z-10 max-w-6xl mx-auto space-y-20">
             
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-2 h-96 shadow-2xl overflow-hidden">
-                <iframe 
-                    title="Ubicación de la Escuela en Google Maps"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235.24783229174665!2d-99.5849007!3d19.3706544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b0548e5d2cd%3A0xe707735910e5dd24!2sClub%20de%20box%20y%20Kickboxing%20osos%20sauces%201!5e0!3m2!1ses-419!2smx!4v1793826099002!5m2!1ses-419!2smx" 
-                    class="w-full h-full rounded-xl grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="strict-origin-when-cross-origin">
-                </iframe>
-            </div>
-        </section>
+            <!-- SECCIÓN 1: INTRODUCCIÓN Y VALORES -->
+             <section class="text-center space-y-3 relative">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-red-950/60 border border-red-600/40 rounded-full text-xs font-bold text-red-400 tracking-widest uppercase shadow-lg shadow-red-950/50">
+                        <img src="assets/img/huella-roja.png" class="h-4 w-auto" alt="Huella">
+                        Conócenos
+                    </div>
+                    <h1 class="text-4xl font-extrabold text-white uppercase tracking-tight">Más que un gimnasio, una familia de disciplina</h1>
+                    <p class="text-slate-300 leading-relaxed text-sm sm:text-base font-medium">
+                        Fundada con la misión de enseñar boxeo auténtico y formar hábitos saludables. Aquí entrenamos el cuerpo y la mente con respeto, humildad y esfuerzo constante bajo la tutela de profesionales experimentados.
+                    </p>
+                    
+                    <div class="pt-2">
+                        <div class="whatsapp-btn-placeholder" 
+                             data-texto="Informes" 
+                             data-mensaje="Hola, me gustaría recibir más información general de la escuela" 
+                             data-clases="px-6 py-3.5 rounded-xl text-sm font-bold shadow-lg">
+                        </div>
+                    </div>
+             </section>
+
+
+            <!-- SECCIÓN 2: INFORMACIÓN DEL PROFESOR -->
+            <section class="bg-slate-900/90 border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-xl">
+                <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+                    <span class="text-red-500 font-bold text-xs uppercase tracking-wider">Liderazgo y Experiencia</span>
+                    <h2 class="text-3xl font-black text-white uppercase tracking-tight">Tu Entrenador</h2>
+                    <p class="text-slate-400 text-sm">Años de trayectoria formando atletas con técnica, disciplina y seguridad.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    <!-- Avatar / Foto simulada -->
+                    <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 text-center space-y-4 shadow-inner flex flex-col items-center justify-center aspect-square md:aspect-auto">
+                        <div class="w-28 h-28 bg-gradient-to-tr from-red-600 to-orange-500 rounded-full flex items-center justify-center text-4xl shadow-lg shadow-red-900/30 overflow-hidden">
+                           <img src="assets/img/user.jpg" 
+                                alt="profileImg" 
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-black text-white">Coach Jurado</h3>
+                            <p class="text-red-400 text-xs font-bold uppercase tracking-wider mt-1">Head Coach Principal</p>
+                        </div>
+                    </div>
+
+                    <!-- Descripción y Títulos -->
+                    <div class="md:col-span-2 space-y-4 text-slate-300 text-sm sm:text-base leading-relaxed font-medium">
+                        <p>
+                            Con una sólida trayectoria en el mundo del boxeo y las artes marciales, nuestro entrenador principal se enfoca tanto en el desarrollo competitivo como en el acondicionamiento físico de personas que buscan mejorar su salud y condición física desde cero.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                            <div class="bg-slate-950/80 border border-slate-800/80 p-3.5 rounded-xl flex items-center gap-3">
+                                <span class="text-red-500 text-lg font-bold">✓</span>
+                                <span class="text-xs font-semibold text-slate-200">Especialista en Técnica y Correcta Postura</span>
+                            </div>
+                            <div class="bg-slate-950/80 border border-slate-800/80 p-3.5 rounded-xl flex items-center gap-3">
+                                <span class="text-red-500 text-lg font-bold">✓</span>
+                                <span class="text-xs font-semibold text-slate-200">Preparador Físico Certificado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SECCIÓN 3: GALERÍA DE INSTALACIONES -->
+            <section class="space-y-6">
+                <div class="text-center max-w-xl mx-auto space-y-2">
+                    <span class="text-red-500 font-bold text-xs uppercase tracking-wider">Espacios Adecuados</span>
+                    <h2 class="text-3xl font-black text-white uppercase tracking-tight">Nuestras Instalaciones</h2>
+                    <p class="text-slate-400 text-sm">Un vistazo al área de entrenamiento, costales y zona de trabajo funcional.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                    <!-- Imagen 1: gym01.jpg -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden group shadow-lg">
+                        <div class="h-64 overflow-hidden">
+                            <img src="assets/img/gym01.jpg" 
+                                 alt="Zona de Costales e Instalaciones del Gimnasio" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 bg-slate-900/90 border-t border-slate-800">
+                            <h4 class="font-extrabold text-white text-sm">Zona de Costales</h4>
+                            <p class="text-xs text-slate-400 mt-1">Espacio dedicado al golpeo de potencia y resistencia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Imagen 2: gym02.jpg -->
+                    <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden group shadow-lg">
+                        <div class="h-64 overflow-hidden">
+                            <img src="assets/img/gym02.jpg" 
+                                 alt="Área Funcional del Gimnasio" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="p-4 bg-slate-900/90 border-t border-slate-800">
+                            <h4 class="font-extrabold text-white text-sm">Área Funcional</h4>
+                            <p class="text-xs text-slate-400 mt-1">Zona equipada para acondicionamiento y fuerza.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SECCIÓN 4: REDES SOCIALES -->
+            <section class="bg-slate-900/90 border border-slate-800 rounded-3xl p-8 sm:p-10 shadow-xl text-center space-y-6">
+                <div class="max-w-xl mx-auto space-y-2">
+                    <span class="text-red-500 font-bold text-xs uppercase tracking-wider">Comunidad Digital</span>
+                    <h2 class="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">Síguenos en Redes Sociales</h2>
+                    <p class="text-slate-400 text-sm">Mira nuestros videos y publicaciones en Facebook y TikTok.</p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 pt-2">
+                    <!-- Botón de Facebook -->
+                    <a href="https://facebook.com" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-2xl transition-all shadow-lg text-sm">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        <span>Facebook</span>
+                    </a>
+
+                    <!-- Botón de TikTok -->
+                    <a href="https://tiktok.com" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-2xl border border-slate-700 transition-all shadow-lg text-sm">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 3 15.6a6.34 6.34 0 0 0 10.86 4.43v-7.8a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.06z"/></svg>
+                        <span>TikTok</span>
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- SECCIÓN 5: UBICACIÓN Y MAPA -->
+            <section class="space-y-6">
+                <div class="bg-slate-900/90 p-8 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl relative overflow-hidden">
+                    <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+                        <div class="space-y-3">
+                            <h2 class="text-xl sm:text-2xl font-bold text-slate-300 tracking-tight">
+                                📍 Nos encuentras en:
+                            </h2>
+                            <p class="text-white font-extrabold text-xl sm:text-2xl max-w-lg leading-relaxed">
+                                Carlos Arruza, Silverio Pérez 141-Y, Villas Santín, 50214 Toluca de Lerdo, Méx.
+                            </p>
+                            <p class="text-slate-400 text-xs sm:text-sm">
+                                Ven a visitarnos y conoce las instalaciones en persona. ¡Tu primera clase te espera!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-2 h-96 shadow-2xl overflow-hidden">
+                    <iframe 
+                        title="Ubicación de la Escuela en Google Maps"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235.24783229174665!2d-99.5849007!3d19.3706544!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8b0548e5d2cd%3A0xe707735910e5dd24!2sClub%20de%20box%20y%20Kickboxing%20osos%20sauces%201!5e0!3m2!1ses-419!2smx!4v1793826099002!5m2!1ses-419!2smx" 
+                        class="w-full h-full rounded-2xl grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </section>
+
+        </div>
 
     </main>
 
