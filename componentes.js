@@ -1,5 +1,5 @@
 // Constantes globales
-const TELEFONO_CONTACTO = "527226647697"; 
+const TELEFONO_CONTACTO = "525532429406"; 
 
 // 1. Cargar Header con Logo de Huella
 function cargarHeader() {
